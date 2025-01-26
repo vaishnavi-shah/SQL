@@ -16,4 +16,3 @@ select avg(max_age)
 from (select gender , avg(age) as avg_age, min(age) as min_age, max(age) as max_age, count(age) as total_age
 from employee_demographics
 group by gender) as agg_table;
-
